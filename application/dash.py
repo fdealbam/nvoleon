@@ -1705,11 +1705,13 @@ card_v_derechohab = dbc.Card(
 
 
 # identificadores
-
+FONT_AWESOMEpro = "https://github.com/fdealbam/nvoleon/tree/main/application/static/css/all.css"
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 server = flask.Flask(__name__)    
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes. 
-                                                LUX, FONT_AWESOME], server=server)
+                                                LUX, 
+                                                FONT_AWESOME, 
+                                                FONT_AWESOMEpro], server=server)
 
 
 # make a reuseable navitem for the different examples
