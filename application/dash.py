@@ -1727,39 +1727,61 @@ default = dbc.NavbarSimple(
 )
 
 body = html.Div([
+ 
+ html.Br(),
+ 
     dbc.Row(
-           [
+           [   #mapa de la entidad 
+               dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/b94700a88ff29ebb35f6bc6e578e5c30a0266f40/1nleona.png?raw=true"),
+                         #href="https://censo2020-mexico.herokuapp.com/",
+                               style={"background-color": "transparent"}),
+                      md={"size": 3,},
+                      style= {
+                         
+                          "margin-top": "-32px", 
+                             "display": "block", "position": "relative",
+                              "inline": "block",
+                              "column-break-inside": "avoid",
+                              "margin-left": "400px",
+                              "margin-bottom": "-230px"
+                             }),
+               
+               
+                      ], justify= "start"), 
                dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true",
                         ),width ={ "size": 1,  "offset": 1,
                                   "height": "5px"}),
                dbc.Col(html.H4("Reporte estadístico básico de ",
-                        style={'offset' : 0, "size": 6,
-                              "margin-left": "-122px",
+                        style={'offset' : 0, "size": 5,
+                               
+                              "margin-left": "140px",
                                "font-size": "12px",
                               "color": "grey",
                                "height": "5px",
-                              'textAlign': 'center',
+                              #'textAlign': 'center',
                                #"font-weight": 'bold',
                                "font-family": "Montserrat"
                               })),
-                      ], justify= "center"),               
+             
+                          
     dbc.Row(
            [
                dbc.Col(html.H1(noment,
-                        style={ "size": 6, "offset":2,
-                              "font-size": "35px",
+                        style={ "offset":2, "size": 5, 
+                              "margin-left": "162px",
+                               "font-size": "35px",
                                "height": "40px",
                               "color": "dark",
-                              'textAlign': 'center',
+                              #'textAlign': 'center',
                                #"font-weight": 'bold',
                                "font-family": "Montserrat",
                               },)),
-                      ], justify= "center"),            
+                      ], justify= "start"),            
     
     #Cintillo 00    
     dbc.Row(
            [
-               dbc.Col(html.H6(d2),           #Fecha de actualización
+               dbc.Col(html.H6(" "),           #Fecha de actualización
                width={'size' : "auto",
                       'offset' : 1,
                       #'textAlign': 'center',
@@ -1767,15 +1789,21 @@ body = html.Div([
             ], justify= "center"),
     dbc.Row(
            [
-               dbc.Col(html.H6("Fuente: Censo 2020, INEGI"),
-                        width={'size' : "auto",
-                               #"offset":1,
-                              'textAlign': 'center',
-                               "color": "grey",
-}),
-            ], justify= "center"),
+               dbc.Col(html.H6("Fuente: Censo 2020, INEGI",
+                        style={ "offset":2, "size": 5, 
+                              "margin-left": "162px",
+                               "font-size": "10px",
+                               "height": "40px",
+                              "color": "dark",
+                              #'textAlign': 'center',
+                               #"font-weight": 'bold',
+                               "font-family": "Montserrat",
+                              },)),
+                      ], justify= "start"),            
                
     html.Br(),
+    
+
     
 
     
