@@ -921,8 +921,13 @@ card2p3 = dbc.Card(
             
 
 #poner aqui lavadora            
-         dbc.Button((["", html.H3(className="fal fa-washer", style={"color": "black",
-                                                                       "background-color": "light"}),
+dbc.Button((["", html.H3(dbc.CardImg(src= "https://raw.githubusercontent.com/fdealbam/nvoleon/main/application/static/laundry.svg?raw=true", 
+                                style={"color": "black",
+                                       "height" :"25px",
+                                      "background-clor": "light"})),            
+            
+                     #dbc.Button((["", html.H3(className="fal fa-washer", style={"color": "black",
+                     #                                                  "background-color": "light"}),
                  html.H6(" Con lavadora ",
                         style={"color":"black",
                                 "font-size":10,
@@ -1705,7 +1710,7 @@ card_v_derechohab = dbc.Card(
 
 
 # identificadores
-FONT_AWESOMEpro = "https://github.com/fdealbam/nvoleon/tree/main/application/static/css/all.css"
+FONT_AWESOMEpro = "{% static 'fontawesome_pro/css/all.min.css' %}"
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 server = flask.Flask(__name__)    
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes. 
