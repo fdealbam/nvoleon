@@ -1,3 +1,4 @@
+
 #NUEVO LEON 
 
 import os
@@ -906,7 +907,7 @@ card2p3 = dbc.Card(
         ]),style={ "background-color": "light"}),
         
 #poner aqui refrigerador            
-         dbc.Button((["", html.H3(className="fas fa-mobile-alt", style={"color": "black",
+         dbc.Button((["", html.H3(className="fal fa-refrigerator", style={"color": "black",
                                                                        "background-color": "light"}),
                  html.H6(" Con refrigerador ",
                         style={"color":"black",
@@ -920,7 +921,7 @@ card2p3 = dbc.Card(
             
 
 #poner aqui lavadora            
-         dbc.Button((["", html.H3(className="fas fa-washer", style={"color": "black",
+         dbc.Button((["", html.H3(className="fal fa-washer", style={"color": "black",
                                                                        "background-color": "light"}),
                  html.H6(" Con lavadora ",
                         style={"color":"black",
