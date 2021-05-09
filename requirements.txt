@@ -65,3 +65,5 @@ webencodings==0.5.1
 Werkzeug==1.0.0
 wincertstore==0.2
 zipp==2.2.0
+--extra-index-url https://dl.fontawesome.com/CF2BC7F5-DB01-4107-B1F0-4A52BD57E648/fontawesome-pro/python/simple/
+fontawesome-pro==version_number
